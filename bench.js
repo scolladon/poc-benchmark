@@ -9,8 +9,14 @@ function fib(n) {
 }
 
 suite
-    .add('fib(100)', () => {
-        fib(100);
+    .add('fib(10)', () => {
+        fib(10);
+    })
+    .add('fib(20)', () => {
+        fib(20);
+    })
+    .add('fib(30)', () => {
+        fib(30);
     })
     .on('cycle', event => {
         // Output benchmark result by converting benchmark result to string
