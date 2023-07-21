@@ -10,6 +10,9 @@ jobs:
   perf:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout sources
+        uses: actions/checkout@v3
+
       - name: Setup node
         uses: actions/setup-node@v3
         with:
